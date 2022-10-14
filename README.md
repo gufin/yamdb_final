@@ -1,3 +1,4 @@
+![workflow](https://github.com/rbs-18/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # api_yamdb
 ## Description
 
