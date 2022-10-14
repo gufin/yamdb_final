@@ -62,7 +62,6 @@ class TitleViewSet(ModelViewSet):
 
 
 class ReviewViewSet(ModelViewSet):
-    """G."""
     serializer_class = ReviewSerializer
     permission_classes = [RewiewPermission]
 
