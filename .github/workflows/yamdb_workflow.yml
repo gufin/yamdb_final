@@ -39,7 +39,7 @@ jobs:
         with:
           file: api_yamdb/Dockerfile
           push: true
-          tags: rbs18/yamdb:v1.1
+          tags: ivanddoker/infra2
 
   deploy:
     runs-on: ubuntu-latest
