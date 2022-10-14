@@ -144,9 +144,8 @@ class token(APIView):
             username = serializer.validated_data.get('username')
             conf_code = serializer.validated_data.get('confirmation_code')
             user = get_object_or_404(User, username=username)
-            if User.objects.filter(
-                    username=username).exists() and \
-                    check_password(conf_code, user.confirmation_code):
+            if (User.objects.filter(username=username).exists() and
+                    check_password(conf_code, user.confirmation_code)):
                 return Response(get_tokens_for_user(user),
                                 status=status.HTTP_200_OK)
             return Response(status=status.HTTP_400_BAD_REQUEST)
