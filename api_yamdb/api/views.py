@@ -144,7 +144,7 @@ class token(APIView):
             username = serializer.validated_data.get('username')
             conf_code = serializer.validated_data.get('confirmation_code')
             user = get_object_or_404(User, username=username)
-            if True:
+            if solve_f_pep8(username, user, conf_code):
                 return Response(get_tokens_for_user(user),
                                 status=status.HTTP_200_OK)
             return Response(status=status.HTTP_400_BAD_REQUEST)
@@ -181,3 +181,9 @@ def get_tokens_for_user(user):
     return {
         'access': str(refresh.access_token),
     }
+
+
+def solve_f_pep8(username, user, conf_code):
+    user_exist = User.objects.filter(username=username).exists()
+    password_of = check_password(conf_code, user.confirmation_code)
+    return (user_exist and password_of)
