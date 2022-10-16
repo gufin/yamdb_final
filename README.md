@@ -1,4 +1,4 @@
-![workflow](https://github.com/rbs-18/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+[![Django-app workflow](https://github.com/gufin/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/gufin/yamdb_final/actions/workflows/yamdb_workflow.yml)
 # api_yamdb
 ## Description
 
