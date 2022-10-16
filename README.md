@@ -50,4 +50,4 @@ docker-compose exec web python manage.py collectstatic --no-input
 ## Authors
 Ivan Drobyshev
 
-[redoc](http://localhost/redoc/)
+[redoc](http://84.201.175.228/redoc/)
