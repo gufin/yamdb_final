@@ -1,4 +1,3 @@
-[![Django-app workflow](https://github.com/gufin/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/gufin/yamdb_final/actions/workflows/yamdb_workflow.yml)
 # 🛠 api_yamdb
 The api implements the ability to create reviews, comment on these reviews, the ability to add new categories of content and divide content into genres. API user authentication implemented through jwt tokens
 
